@@ -1,10 +1,23 @@
 
 
+function click() {
+    alert('has hecho click en este boton');
+}
+
+function MyButton({ count, onClick }) {
+
+    
 
 
-function MyButton(){
-    return(
-        <button>Soy un boton</button>
+    return (
+
+        <div>
+            <button onClick={onClick} >Soy un boton y me has presionado {count} veces </button>
+            <button onClick={click} > este es mi otro boton</button>
+        </div>
+
+
+
     );
 }
 
